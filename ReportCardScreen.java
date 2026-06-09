@@ -170,7 +170,7 @@ public class ReportCardScreen extends JFrame {
         if (score >= 45) return 2.25;
         if (score >= 40) return 2.00;
         if (score < 40) return 0.00;
-        return -1; 
+        return 0.00; 
     }
 
     private String getAcademicClassStanding(double gpa) {

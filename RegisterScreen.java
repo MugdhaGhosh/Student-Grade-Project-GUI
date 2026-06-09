@@ -171,7 +171,9 @@ public class RegisterScreen extends JFrame {
                 showMsg("Username already taken. Try another.", false); return;
             }
         }
+        
         users.add(new User(user, pass, first, last));
+
         showMsg("Account created! Signing you in…", true);
 
         Timer t = new Timer(1200, e -> {
@@ -195,10 +197,10 @@ public class RegisterScreen extends JFrame {
         if (pass.matches(".*[^a-zA-Z0-9].*")) score++;
 
         Color[] colors = {
-            new Color(0xE2, 0x4B, 0x4A),  // red
-            new Color(0xBA, 0x75, 0x17),  // amber
-            UITheme.GREEN_600,            // green
-            UITheme.GREEN_600             // green
+            new Color(0xE2, 0x4B, 0x4A),  
+            new Color(0xBA, 0x75, 0x17), 
+            UITheme.GREEN_600,            
+            UITheme.GREEN_600             
         };
         Component[] segs = strengthBar.getComponents();
         for (int i = 0; i < segs.length; i++) {

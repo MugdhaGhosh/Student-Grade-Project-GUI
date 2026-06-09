@@ -118,6 +118,7 @@ public class LoginScreen extends JFrame {
                 return;
             }
         }
+        
         showMsg("Invalid username or password.", false);
         passField.setText("");
     }
@@ -147,8 +148,6 @@ public class LoginScreen extends JFrame {
         SwingUtilities.invokeLater(() -> {
             try { UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName()); }
             catch (Exception ignored) {}
-            
-            // Seed sample database for effortless debugging
             ArrayList<User> testDb = new ArrayList<>();
             testDb.add(new User("admin", "admin", "Alex", "Smith"));
             

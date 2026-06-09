@@ -13,6 +13,7 @@ public class User {
         this.firstName = firstName;
         this.lastName = lastName;
     }
+    
     public Semester getOrCreateSemester(String semName) {
         for (Semester s : semesters) {
             if (s.semesterName.equalsIgnoreCase(semName)) {

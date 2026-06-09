@@ -3,6 +3,7 @@ import java.awt.*;
 import java.util.ArrayList;
 
 public class DashboardScreen extends JFrame {
+   
     private final User currentUser;
     private final ArrayList<User> allUsers;
 
