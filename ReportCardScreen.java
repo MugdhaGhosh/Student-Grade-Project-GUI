@@ -7,7 +7,7 @@ public class ReportCardScreen extends JFrame {
 
     public ReportCardScreen(User student, String targetSemester, JFrame parentWindow, ArrayList<User> allUsers) {
         setTitle("Academic Report Card");
-        setSize(1100, 950); 
+        setSize(1000, 650); 
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
@@ -58,9 +58,9 @@ public class ReportCardScreen extends JFrame {
         double averageMark = totalCoursesCount == 0 ? 0 : (double) totalMarksEarned / totalCoursesCount;
         String averagePassFailStatus = (averageMark >= 40.0) ? "PASSING AVERAGE" : "FAILING AVERAGE";
         double totalPercentage = totalCoursesCount == 0 ? 0 : ((double) totalMarksEarned / (totalCoursesCount * 100)) * 100;
-        double finalCalculatedGPA = totalCredits == 0 ? 0 : dynamicWeightedGPAPoints / totalCredits;
+        double finalCalculatedCGPA = totalCredits == 0 ? 0 : dynamicWeightedGPAPoints / totalCredits;
         
-        String standingClass = getAcademicClassStanding(finalCalculatedGPA);
+        String standingClass = getAcademicClassStanding(finalCalculatedCGPA);
         String finalPassFailStatus = (totalFailedUnits == 0) ? "ALL PASSED" : "FAILED UNITS EXIST";
         JPanel statsGrid = new JPanel(new GridLayout(4, 2, 0, 8)); 
         statsGrid.setBackground(Color.WHITE);
@@ -111,7 +111,7 @@ public class ReportCardScreen extends JFrame {
         JPanel badgeContainer = new JPanel(new FlowLayout(FlowLayout.CENTER, 15, 5));
         badgeContainer.setOpaque(false);
 
-        JLabel gpaLabel = new JLabel(String.format("GPA: %.2f", finalCalculatedGPA));
+        JLabel gpaLabel = new JLabel(String.format("CGPA: %.2f", finalCalculatedCGPA));
         gpaLabel.setFont(new Font("SansSerif", Font.BOLD, 18));
         gpaLabel.setForeground(new Color(21, 101, 192));
 
@@ -173,11 +173,11 @@ public class ReportCardScreen extends JFrame {
         return 0.00; 
     }
 
-    private String getAcademicClassStanding(double gpa) {
-        if (gpa >= 3.75) return "First Class";
-        if (gpa >= 3.00) return "Second Class Upper";
-        if (gpa >= 2.50) return "Second Class Lower";
-        if (gpa >= 2.00) return "Third Class";
+    private String getAcademicClassStanding(double cgpa) {
+        if (cgpa >= 3.75) return "First Class";
+        if (cgpa >= 3.00) return "Second Class Upper";
+        if (cgpa >= 2.50) return "Second Class Lower";
+        if (cgpa >= 2.00) return "Third Class";
         return "Fail / Academic Probation";
     }
 }

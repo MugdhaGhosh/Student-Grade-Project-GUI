@@ -133,7 +133,7 @@ public class DashboardScreen extends JFrame {
         JPanel wrapper = new JPanel(new BorderLayout(0, 4));
         wrapper.setOpaque(false);
         JLabel lbl = new JLabel(labelTitle);
-        lbl.setFont(new Font("SansSerif", Font.BOLD, 11));
+        lbl.setFont(new Font("SansSerif", Font.BOLD, 15));
         lbl.setForeground(new Color(120, 130, 140));
         wrapper.add(lbl, BorderLayout.NORTH);
         return wrapper;
