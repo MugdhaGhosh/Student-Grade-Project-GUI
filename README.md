@@ -5,9 +5,13 @@ The application includes a secure login and registration system, allowing users 
 
 ✨ Features
 User Registration and Login
+
 Secure User Authentication
+
 Student Information Entry
+
 Semester-wise Course Management
+
 Credit Hour Processing
 Grade Calculation
 Grade Point Calculation
