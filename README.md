@@ -4,6 +4,8 @@ The Student Grade Management System is a Java-based desktop application develope
 The application includes a secure login and registration system, allowing users to access the CGPA calculation module after successful authentication. It simplifies academic result calculation by reducing manual effort and minimizing calculation errors.
 
 
+
+
 ✨ Features
 
 User Registration and Login
@@ -40,6 +42,8 @@ User-Friendly Graphical Interface
 
 
 
+
+
 🛠 Technologies Used
 
 Java
@@ -57,6 +61,8 @@ Scanner Class
 NetBeans / IntelliJ IDEA / Eclipse
 
 Java Development Kit (JDK)
+
+
 
 
 
@@ -91,6 +97,8 @@ Polymorphism
 The project structure supports future implementation of method overriding and overloading.
 
 
+
+
 🏗 System Workflow
 
 User registers a new account.
@@ -110,6 +118,8 @@ Semester GPA is generated.
 Overall CGPA is calculated.
 
 Final result, division, and pass/fail status are displayed.
+
+
 
 
 
@@ -138,6 +148,8 @@ Marks	Grade	Grade Point
 Below 40 ------	F  -----	0.00
 
 
+
+
 ▶️ How to Run
 
 Clone the repository.
@@ -153,6 +165,8 @@ Register a new account or log in.
 Start entering academic information and calculate CGPA.
 
 
+
+
 🔒 Limitations
 
 Data is stored only during program execution.
@@ -166,23 +180,6 @@ Console version has a basic user interface.
 No data export functionality.
 
 
-🚀 Future Improvements
-
-Database Integration (MySQL)
-
-File-Based Data Storage
-
-Advanced User Profiles
-
-PDF Report Generation
-
-Graphical Analytics Dashboard
-
-Cloud-Based Result Management
-
-Mobile Application Version
-
-Enhanced Security Features
 
 
 🚀 Future Improvements
@@ -202,6 +199,29 @@ Cloud-Based Result Management
 Mobile Application Version
 
 Enhanced Security Features
+
+
+
+
+🚀 Future Improvements
+
+Database Integration (MySQL)
+
+File-Based Data Storage
+
+Advanced User Profiles
+
+PDF Report Generation
+
+Graphical Analytics Dashboard
+
+Cloud-Based Result Management
+
+Mobile Application Version
+
+Enhanced Security Features
+
+
 
 
 👨‍💻 Author
